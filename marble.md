@@ -64,20 +64,14 @@
 
 > [!Important]
 > - A14 recovery: [Tap here for link](https://www.pling.com/p/2131814/)
-> - Firmware : [Tap Here for link](https://t.me/chaitanyabuilds/52705)
-> - If facing Sms bug toggle sim on off on every boot and for rooted users flash this [smsfix zip file](https://sourceforge.net/projects/project-elixir/files/fourteen/marble/smsfix/)
->    * If u r not receiving OTP or sms after booting rom or after restart, flash this in ksu or magisk and allow mobile to reboot
-Or
-If u r not rooted, u can Toggle sim off and on once. If still doesn't fix, then turn sim off first, then restart ur Mobile and then turn sim on.
-> - Flash [This](https://github.com/tiann/KernelSU/releases/download/v0.7.6/AnyKernel3-android12-5.10.198_2023-11.zip) if Ksu Required
+> - Firmware : [Tap Here for link](https://xiaomifirmwareupdater.com/firmware/marble/)
+> - Flash [This](https://sourceforge.net/projects/marble-builds/files/losksu/LosKsu.zip/download) Or [melt kernel](https://t.me/paradoxkernelmarblediscussion) for ksu
 
 > [!Note] 
 > - ROM comes with Gapps inbuilt no need to flash gapps.
-> - If you are coming from Android 12 or 13 to Android 14 then clean flash is compulsory.
-> - Melt Kernel is not Supported
-> - First Boot time may take 2 minutes so wait
-> - Reboot time may be 30 seconds for some cases approx
-> - Wait For atleat 1 day for the rom to settle down
+> - If you are coming from another rom or non los trees based elixir clean flash is compulsory.
+> - Only Melt kernel is supported other gki kernels not supported.
+> - Wait For atleat 1 day for the rom to settle down.
 
 <br>
 
