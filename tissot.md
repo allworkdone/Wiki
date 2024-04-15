@@ -49,7 +49,7 @@ adb devices
 adb reboot bootloader
 ```
 
-### Step 3: Flash Recovery using Fastboot
+### Step 3: Boot Recovery using Fastboot
 1. Once your device is in Fastboot Mode, use the following command to check if Fastboot still detects your device:
 ```
 fastboot devices
@@ -61,17 +61,11 @@ fastboot devices
 
 2. Download the  Recovery ZIP (`.img` file will be in zip) from the link provided in Step 1.
 3. Place the downloaded  Recovery image (`.img` file) in the same location as the platform-tools folder on your computer.
-4. Now, flash the  Recovery using the following command:
+4. Now, boot the  Recovery using the following command:
 ```
-fastboot flash recovery recovery_file_name.img
+fastboot boot recovery.img
 ```
-> [!Important]
-> Replace `recovery_file_name.img` with the actual name of the  Recovery image you downloaded if needed.
-5. After flashing the recovery, use the following command to reboot your Recovery:
-```
-fastboot reboot recovery
-```
-6. Your device will reboot with Recovery installed.
+5. Your device will reboot with Recovery installed.
 > [!Note]
 > If your recovery does not show the logo, then you have ccidentally booted into the wrong recovery. Please start at the top of this section!
 
