@@ -19,7 +19,7 @@
 > * Take a backup for safe side (If you are coming from older Android version or doing a clean flash)
 > * For any queries or help related to Elixir, join our support group : [Tap Here](https://telegram.me/Elixir_Discussion)  
 
-### Unlocking the Bootloader [1/5] :
+### Unlocking the Bootloader [1/4] :
 
 > [!Note] 
 > The steps below only need to be run once per device.
@@ -56,7 +56,7 @@ Press and hold Volume Down + Power key together till you reach the screen reads 
    - Your device should prompt you for unlock. Use the volume keys to accept the unlock.
  2. Once the device bootloader unlocked follow up with the next steps.
 
-### Ensuring all firmware partitions are consistent [2/5 - Optional] :
+### Ensuring all firmware partitions are consistent [2/4 - Optional] :
 
 > [!Note]
 > The steps below only need to be run once per device.
@@ -66,7 +66,7 @@ Press and hold Volume Down + Power key together till you reach the screen reads 
  3. Once the firmware installation is done, now power off the device & follow up the below steps.
 Retrofit 
 
-### Re-Partition your Nokia 6.1+ device [3/5] :
+### Re-Partition your Nokia 6.1+ device [3/4] :
 
 >[!Warning]
 >Re-Partition only required once, befor installing the Custom ROM
@@ -78,37 +78,24 @@ fastboot flash partition <PATH_TO_FIH_SDM660_AVB1_gpt_both0_3.5s_1v.bin>
 ```
  3. Once the re-partition performed, you can follow up the below steps. 
 
-### Retrofit Dynamic Partititions instruction [4/5] :
-
-> [!Warning]
-> Retrofit Dynamic partition must be initialized when installing for the first time, so the process to do so is described below.
-
- 1. Reboot your device into `Download mode/fastboot mode`
- 2. Install the `Nokia Driver` from [Here](https://github.com/StollD/nokia-driver-installer/raw/master/out/Phone_Nokia_USB_Driver_v1.4.0.exe)
- 3. Download `Platform tool` by Google from [Here](https://developer.android.com/tools/releases/platform-tools)
- 4. Download the `super_empty.img` from [Here](https://github.com/ProjectElixir-Devices/device_nokia_DRG/releases/download/DRG-RDP/super_empty.img)
- 5. Now flash `super_empty.img` file with the given command 
-```
-fastboot wipe-super <PATH TO Super-empty.img>
-```
- 6. Now follow up with the below steps.
-
-### ROM installation [5/5] :
+### ROM installation [4/4] :
 
  1. Reboot your device into `fastboot mode/Download mode`
- 2. Type `fastboot device`, if the device S/N detected then everything is all good. [If not detected install the [Nokia Driver](https://github.com/StollD/nokia-driver-installer/raw/master/out/Phone_Nokia_USB_Driver_v1.4.0.exe) & [Platform tool](https://developer.android.com/tools/releases/platform-tools)]
- 3. Now flash the boot.img (ProjectElixir recovery) in both the slots by the following commands:
+ 2. Install the `Nokia Driver` from [Here](https://github.com/StollD/nokia-driver-installer/raw/master/out/Phone_Nokia_USB_Driver_v1.4.0.exe)
+ 3. Download `Platform tool` by Google from [Here](https://developer.android.com/tools/releases/platform-tools)
+ 4. Type `fastboot device`, if the device S/N detected then everything is all good. [If not detected install the [Nokia Driver](https://github.com/StollD/nokia-driver-installer/raw/master/out/Phone_Nokia_USB_Driver_v1.4.0.exe) & [Platform tool](https://developer.android.com/tools/releases/platform-tools)]
+ 5. Now flash the boot.img (ProjectElixir recovery) in both the slots by the following commands:
 
 ```
 fastboot flash boot_a <PATH_TO_boot.img>
 fastboot flash boot_b <PATH_TO_boot.img>
 ```
- 4. Now reboot into `recovery mode` by holding the Volume Up & Power button.
- 5. Apply Update » adb sideload method & sideload the ProjectElixir .zip file by 
+ 6. Now reboot into `recovery mode` by holding the Volume Up & Power button.
+ 7. Apply Update » adb sideload method & sideload the ProjectElixir .zip file by 
 ```
 adb sideload <PATH_TO_ProjectElixir4.x-*.zip>
 ```
- 6. Once the installation done, perform the `Factory reset` then » `Reboot to system`
+ 8. Once the installation done, perform the `Factory reset` then » `Reboot to system`
 
 ### Installing Project Elixir from recovery:
 
