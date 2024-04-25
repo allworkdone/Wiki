@@ -65,7 +65,7 @@
 > [!Important]
 > - A14 recovery: [Tap here for link](https://www.pling.com/p/2131814/)
 > - Firmware : [Tap Here for link](https://xiaomifirmwareupdater.com/firmware/marble/)
-> - Flash [This](https://sourceforge.net/projects/marble-builds/files/losksu/LosKsu.zip/download) Or [melt kernel](https://t.me/paradoxkernelmarblediscussion) for ksu
+> - Flash [This](https://sourceforge.net/projects/marble-builds/files/Kernel/LosKsu.zip/download) Or [melt kernel](https://t.me/paradoxkernelmarblediscussion) for ksu
 
 > [!Note] 
 > - ROM comes with Gapps inbuilt no need to flash gapps.
