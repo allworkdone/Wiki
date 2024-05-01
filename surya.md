@@ -28,6 +28,7 @@
 ```
 - Download the latest build
 - Take a backup for safe side
+- Wipe cache, dalvik and data
 - Boot to Recovery - must use A14 recovery - link below
 - Flash the latest build
 - Format Data
